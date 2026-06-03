@@ -199,6 +199,12 @@ void SohMenu::AddMenuSettings() {
             SDL_OpenURL(std::string("file:///" + std::filesystem::absolute(filesPath).string()).c_str());
         })
         .Options(ButtonOptions().Tooltip("Opens the folder that contains the save and mods folders, etc."));
+    AddWidget(path, "Discord Rich Presence", WIDGET_CVAR_CHECKBOX)
+        .CVar(CVAR_ENHANCEMENT("DiscordRPC"))
+        .RaceDisable(false)
+        .Options(CheckboxOptions().DefaultValue(false).Tooltip(
+            "Shows whether you're in the menus, exploring, or watching a cutscene on your Discord profile. "
+            "Requires the Discord desktop app to be running."));
 
     AddWidget(path, "Boot", WIDGET_SEPARATOR_TEXT);
     AddWidget(path, "Boot Sequence", WIDGET_CVAR_COMBOBOX)

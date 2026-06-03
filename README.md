@@ -1,3 +1,5 @@
+This fork adds [Discord Rich Presence](docs/DISCORD_RPC.md) support, so the game can show what you're playing on your Discord profile.
+
 ![Ship of Harkinian](docs/shiptitle.darkmode.png#gh-dark-mode-only)
 ![Ship of Harkinian](docs/shiptitle.lightmode.png#gh-light-mode-only)
 
